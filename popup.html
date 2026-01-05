@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+      font-size: 12px;
+    }
+    #device-id {
+      word-break: break-all;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      display: block;
+      margin-top: 5px;
+      font-family: monospace;
+      border: 1px solid #ddd;
+    }
+    .error {
+      color: #d93025;
+      font-size: 11px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="label">Directory Device ID:</div>
+  <code id="device-id">Fetching...</code>
+  <div id="error-message" class="error"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
