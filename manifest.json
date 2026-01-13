@@ -8,6 +8,16 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "View Device ID"
+    "default_title": "View Device ID",
+    "default_icon": {
+      "16": "assets/check.png",
+      "48": "assets/check.png",
+      "128": "assets/check.png"
+    }
+  },
+  "icons": {
+    "16": "assets/check.png",
+    "48": "assets/check.png",
+    "128": "assets/check.png"
   }
 }

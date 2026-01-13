@@ -2,7 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const display = document.getElementById('device-id');
   const errorDisplay = document.getElementById('error-message');
 
-  // Check if the API exists (only exists on ChromeOS)
+  // Uncomment the line below to test the UI with a sample ID
+  const fakeId = "f43e0315-7734-4b45-9736-19e612345678";
+  
+  if (fakeId) {
+      display.textContent = fakeId;
+      return; // Stop the script here so we don't call the real API
+  }
+  // ------------------------------------------------
+
+  //Check if the API exists (only exists on ChromeOS)
   if (chrome.enterprise && chrome.enterprise.deviceAttributes) {
     
     chrome.enterprise.deviceAttributes.getDirectoryDeviceId((id) => {
